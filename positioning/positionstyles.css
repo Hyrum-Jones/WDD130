@@ -134,7 +134,8 @@
 /* Activity 5 styles */ 
 .content5 {
   /* This is the parent of the activity 5 boxes. */
- position: relative;
+    
+  position: relative;
   height: 400px;
 }
 .red5 { 
@@ -144,46 +145,74 @@
 } 
 .green5 { 
   width: 100px;
-  height: 100px; 
+  height: 100%;  
   background-color: green; 
-  float: left;
-} 
+  position: absolute; 
+  left: 0;
+  top: 100px;
+}
 .yellow5 {
-  width: 100%; 
-  height: calc(100% - 100px - 50px);
-  clear: both; 
+  width: calc(100% - 100px); 
+  height: calc(100% - 150px); 
   background-color: gold; 
-
+  position: absolute;
+  left: 100px;  
+  top: 100px;  
+  padding: 10px; 
+  overflow: auto; 
 } 
 .blue5 {
   width: 100%; 
-  height: 100px; 
+  height: 50px; /* Smaller than before to fit layout */
   background-color: blue; 
+  position: absolute;
+  bottom: 0;
 } 
 /* Activity 6 styles */ 
 .content6 {
   /* This is the parent of the activity 6 boxes. */
+  position: relative;
+  width: 400px; /* Adjust as needed */
+  height: 400px;
+  background-color: white;
+  border: 2px solid black;
 }
+
 .red6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
-} 
+  width: 150px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
 .green6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
-} 
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .yellow6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
-} 
+  width: 100px;
+  height: 150px;
+  background-color: gold;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
 .blue6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
-} 
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
 
 
 /* Do not make any changes below here */
